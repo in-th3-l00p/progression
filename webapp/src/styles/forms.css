@@ -1,0 +1,17 @@
+.form-group {
+    @apply flex flex-wrap w-full items-center justify-center gap-4;
+}
+
+.form-label {
+    @apply flex-shrink w-48 text-center text-xl;
+}
+
+.form-input {
+    @apply
+        flex-grow p-4 min-w-0
+        border-4 border-dark-green outline-none rounded-lg
+        bg-background text-text text-xl
+        focus:border-green
+        default-shadow
+    ;
+}

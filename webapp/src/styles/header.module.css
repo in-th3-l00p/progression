@@ -1,0 +1,29 @@
+.dropdownHider {
+  animation: show-dropdown-hider 0.5s ease-in-out;
+  opacity: 0.3;
+}
+
+@keyframes show-dropdown-hider {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.3;
+  }
+}
+.dropdownListItem {
+  @apply w-full text-center rounded-md;
+  cursor: pointer;
+}
+.dropdownListItem .dropdownLink {
+  @apply w-full h-full rounded-md text-lg py-4 ps-4 pe-10 flex justify-between items-center gap-8;
+}
+.dropdownListItem .dropdownLink:hover {
+  @apply bg-lighter-background;
+}
+.dropdownListItem .dropdownLink .dropdownIcon {
+  @apply w-6 h-6;
+  filter: invert(100%);
+}
+
+/*# sourceMappingURL=header.module.css.map */

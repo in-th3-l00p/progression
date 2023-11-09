@@ -1,0 +1,3 @@
+.dashboard-container {
+    @apply h-full bg-lighter-background rounded-xl default-shadow hover:bigger-shadow transition-shadow;
+}

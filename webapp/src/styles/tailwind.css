@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-background text-text overflow-x-clip break-after-all;
+}
+
+.btn {
+    @apply
+        p-4 border-4 border-green rounded-lg default-shadow
+        hover:bg-dark-green hover:border-dark-green hover:bigger-shadow
+        transition-colors;
+}
+
+@layer utilities {
+    .default-shadow {
+        @apply shadow-gray-800 shadow-lg;
+    }
+
+    .bigger-shadow {
+        @apply shadow-gray-800 shadow-2xl;
+    }
+}
+
